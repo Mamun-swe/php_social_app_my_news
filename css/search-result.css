@@ -1,0 +1,11 @@
+.searchUserName{
+    color: #444444;
+    background: #dfdfdf1c;
+    margin-bottom: 1px;
+    transition: 0.3s;
+}
+.searchUserName:hover{
+    text-decoration: none;
+    color: #000;
+    background: #dfdfdf;
+}

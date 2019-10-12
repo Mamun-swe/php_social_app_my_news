@@ -1,0 +1,18 @@
+.navbar{
+    font-family: Nunito-Regular;
+}
+.navbar .navbar-brand{
+    font-family: LeckerliOne-Regular;
+}
+@media(min-width: 992px){
+    .navbar{
+        padding-left: 115px;
+        padding-right: 115px;
+    }
+}
+@media(min-width: 1440px){
+    .navbar{
+        padding-left: 390px;
+        padding-right: 390px;
+    }
+}

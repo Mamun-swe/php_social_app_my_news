@@ -1,0 +1,13 @@
+.custom-comment{
+    font-family: Nunito-Regular;
+}
+.custom-comment p{
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.custom-comment .comment{
+    border-bottom: 1px solid #dfdfdf50;
+}
+.custom-comment .comment h5{
+    font-size: 16px;
+}

@@ -1,0 +1,30 @@
+.login{
+    width: 100%;
+    height: 100vh;
+}
+.login h1{
+    font-family: LeckerliOne-Regular;
+}
+.login p{
+    font-family: Nunito-Regular;
+}
+.login .card .card-header{
+    background: none;
+}
+.login .card .card-body{
+    font-family: Nunito-Bold;
+}
+
+
+
+@media(max-width: 576px) {
+    .login .card{
+        width: 90%;
+    }
+}
+@media(min-width: 576px) {
+    .login .card{
+        width: 450px;
+    }
+}
+

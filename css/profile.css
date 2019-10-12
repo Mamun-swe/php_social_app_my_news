@@ -1,0 +1,28 @@
+.cover-card{
+    width: 100%;
+    height: 150px;
+    border-radius: 0px;
+    background: url('../assets/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cover-card .card-body{
+    background: #00000057;
+}
+.cover-card h1{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+@media(max-width: 576px) {
+    .cover-card h1{
+        font-size: 25px;
+    }
+}
+@media(min-width: 576px) {
+    .cover-card h1{
+        font-size: 30px;
+    }
+}
