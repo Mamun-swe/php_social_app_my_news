@@ -17,6 +17,12 @@
         <a class="nav-link" href="./profile.php">Profile</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="./friend.php">Friends</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./people.php">Peoples</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="./logout.php" title="Logout"><i class="fas fa-power-off"></i></a>
       </li>
     </ul>

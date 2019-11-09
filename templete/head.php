@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../css/profile.css">
   <link rel="stylesheet" href="../css/comment.css">
   <link rel="stylesheet" href="../css/search-result.css">
+  <link rel="stylesheet" href="../css/edit-profile.css">
+  <link rel="stylesheet" href="../css/friend.css">
   <title>My News</title>
 </head>
 <body>

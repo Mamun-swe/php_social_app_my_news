@@ -47,9 +47,12 @@
                 $select_posts = "SELECT * FROM posts WHERE post_id='$postId'";
                 $result = mysqli_query($conn, $select_posts);
                 while ($row = mysqli_fetch_array($result)){
+                    $image = $row['images'];
+                    $image_src = "./images/".$image;
                 ?>
                 
                 <p class="mb-0 pb-3 border-bottom"><?php echo $row['content']; ?></p>
+                <img src='<?php echo $image_src;  ?>' class="img-fluid">
                 <?php  
                 }
                 // Comment count

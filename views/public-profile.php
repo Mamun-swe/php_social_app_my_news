@@ -48,6 +48,8 @@
                 $select_posts = "SELECT * FROM posts JOIN users ON posts.user_id=users.user_id  WHERE posts.user_id='$userId' ORDER BY post_id DESC";
                 $result = mysqli_query($conn, $select_posts);
                 while ($row = mysqli_fetch_array($result)){
+                    $image = $row['images'];
+                    $image_src = "./images/".$image;
             ?>
             <div class="card shadow-sm mb-4 mb-lg-5">
                 <div class="card-body pb-0">
@@ -57,6 +59,7 @@
                     </div>
                     <div class="custom-user-post pt-4">
                         <p><?php echo $row['content']; ?></p>
+                        <img src='<?php echo $image_src;  ?>' class="img-fluid">
                     </div>
                 </div>
                 <div class="card-footer border-0">

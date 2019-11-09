@@ -9,9 +9,11 @@
         $result = mysqli_query($conn, $select_user);
         while ($row = mysqli_fetch_array($result)){
            $logged_user_name = $row['user_name'];
+           $profileImage = $row['profile_image'];
+            $Profile_image_src = "./profile_images/".$profileImage;
         }
     }else{
-        header('location: ../index.php');
+        header('location: ../logout.php');
     }
 ?>
 
@@ -25,8 +27,10 @@
         <div class="col-12 col-lg-8 m-auto">
             <div class="card cover-card">
                 <div class="card-body">
-                    <div class="flex-center flex-colum">
+                    <div class="flex-center flex-column">
+                        <img src='<?php echo $Profile_image_src;  ?>' class="profile-image rounded-circle">
                         <h1 class="text-capitalize mb-0"><?php echo $logged_user_name; ?></h1>
+                        <a href="./edit-profile.php" class="btn btn-sm btn-light rounded-0 shadow-none py-0">Edit profile</a>
                     </div>
                 </div>
             </div>
@@ -42,6 +46,8 @@
                 $select_posts = "SELECT * FROM posts JOIN users ON posts.user_id=users.user_id  WHERE posts.user_id='$sessionId' ORDER BY post_id DESC";
                 $result = mysqli_query($conn, $select_posts);
                 while ($row = mysqli_fetch_array($result)){
+                    $image = $row['images'];
+                    $image_src = "./images/".$image;
             ?>
             <div class="card shadow-sm mb-4 mb-lg-5">
                 <div class="card-body pb-0">
@@ -59,6 +65,7 @@
                     </div>
                     <div class="custom-user-post pt-4">
                         <p><?php echo $row['content']; ?></p>
+                        <img src='<?php echo $image_src;  ?>' class="img-fluid">
                     </div>
                 </div>
                 <div class="card-footer border-0">
